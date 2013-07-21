@@ -144,39 +144,16 @@ setopt correctall # correction
 [[ -z $HOST ]] && HOST=$HOSTNAME
 
 alias -g L='| less'
-alias RM='rm -rf'
 alias c="cd .."
-alias cpv="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress --"
 alias l="ls -al"
 alias less="less -R -I -X -F"
 alias ls="ls --color=yes"
-alias ms="man -k"
-alias psg='ps ax|g'
-alias s='apt-cache search'
-alias t="tail"
-alias tf="tail -f"
-alias pygrep='/bin/grep --color=always -I --include="*.py"'
+alias s='yum search'
 alias virc="$EDITOR ~/.zshrc;source ~/.zshrc"
 alias zcp='noglob zcp'
 alias zln='noglob zln'
 alias zmv='noglob zmv'
-alias mypy='/home/roman/tools/python2.4/bin/python2.4'
-alias plone4='cd $HOME/works/projects/plone4'
-alias pep8='/home/roman/tools/python2.6/bin/pep8'
-
-# === my functions ===
-
-# open a file in your browser from the shell
-browse () {
-    prefix=""
-    [[ $1 != /* ]] && prefix=`pwd`/
-    if [[ $BROWSER == opera ]]; then
-        opera -remote "openURL(file://$prefix$1,new-page)"
-    else
-        $BROWSER file://"$prefix$1"
-    fi
-}
-alias br=browse
+alias rtest='NO_FIXTURE_LOAD=1 REDGREEN=1 ruby -Ilib:test'
 
 # this gives us access to the fg and bg arrays used below
 autoload colors
