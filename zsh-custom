@@ -1,0 +1,2 @@
+# vim:set ft=zsh
+export ZSH_THEME="af-magic"

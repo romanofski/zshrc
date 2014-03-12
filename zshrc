@@ -161,3 +161,7 @@ autoload colors
 colors
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+if [ -f $ZSH/.zsh-custom ]
+then
+    source $ZSH/.zsh-custom
+fi
