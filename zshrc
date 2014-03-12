@@ -153,8 +153,11 @@ alias virc="$EDITOR ~/.zshrc;source ~/.zshrc"
 alias zcp='noglob zcp'
 alias zln='noglob zln'
 alias zmv='noglob zmv'
-alias rtest='NO_FIXTURE_LOAD=1 REDGREEN=1 ruby -Ilib:test'
+alias vim_update='vim +BundleInstall! +qall'
+alias vim_bootstrap='git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle && vim_update'
 
 # this gives us access to the fg and bg arrays used below
 autoload colors
 colors
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
