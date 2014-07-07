@@ -133,11 +133,11 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 export ZSH_THEME="afowler"
 
-if [ -f $ZSH/zsh-custom ]
+if [ -f $HOME/.zsh-custom ]
 then
-    source $ZSH/zsh-custom
+    source $HOME/.zsh-custom
 else
-    echo "couldn't find $ZSH/zsh-custom"
+    echo "couldn't find $HOME/.zsh-custom"
 fi
 source $ZSH/oh-my-zsh.sh
 
