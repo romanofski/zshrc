@@ -1,3 +1,3 @@
 # vim:set ft=zsh
 export ZSH_THEME="flazz"
-plugins=(git vi-mode common-aliases compleat rails3 yum ssh-agent)
+plugins=(git vi-mode common-aliases compleat rails yum ssh-agent)
