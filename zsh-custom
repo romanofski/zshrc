@@ -1,3 +1,5 @@
 # vim:set ft=zsh
 export ZSH_THEME="flazz"
+path=("$HOME/.local/bin" $path)
+export PATH
 plugins=(git vi-mode common-aliases compleat rails yum ssh-agent)

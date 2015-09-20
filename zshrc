@@ -119,7 +119,6 @@ alias vim_update='vim +BundleInstall! +qall'
 alias vim_bootstrap='git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle && vim_update'
 alias ggrep='git grep --color'
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git github vi-mode)
