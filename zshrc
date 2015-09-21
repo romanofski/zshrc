@@ -110,7 +110,7 @@ alias c="cd .."
 alias l="ls -al"
 alias less="less -R -I -X -F"
 alias ls="ls --color=yes"
-alias s='yum search'
+alias s='dnf search'
 alias virc="$EDITOR ~/.zshrc;source ~/.zshrc"
 alias zcp='noglob zcp'
 alias zln='noglob zln'
