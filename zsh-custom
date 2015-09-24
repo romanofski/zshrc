@@ -1,2 +1,2 @@
 # vim:set ft=zsh
-plugins=(git vi-mode common-aliases compleat rails yum ssh-agent)
+plugins=(git vi-mode common-aliases compleat virtualenvwrapper yum ssh-agent)
